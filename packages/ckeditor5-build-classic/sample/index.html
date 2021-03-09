@@ -27,8 +27,13 @@
 </div>
 
 <script src="../build/ckeditor.js"></script>
+
 <script>
-	ClassicEditor.create( document.querySelector( '#editor' ) )
+	ClassicEditor.create( document.querySelector( '#editor' ), {
+		ckfinder: {
+		uploadUrl: '/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files&responseType=json',
+	},
+	} )
 		.then( editor => {
 			window.editor = editor;
 		} )
