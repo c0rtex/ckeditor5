@@ -24,17 +24,60 @@ import Indent from '@ckeditor/ckeditor5-indent/src/indent';
 import Link from '@ckeditor/ckeditor5-link/src/link';
 import List from '@ckeditor/ckeditor5-list/src/list';
 import MediaEmbed from '@ckeditor/ckeditor5-media-embed/src/mediaembed';
-import Paragraph from '@ckeditor/ckeditor5-paragraph/src/paragraph';
 import PasteFromOffice from '@ckeditor/ckeditor5-paste-from-office/src/pastefromoffice';
 import Table from '@ckeditor/ckeditor5-table/src/table';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformation';
 import CloudServices from '@ckeditor/ckeditor5-cloud-services/src/cloudservices';
+import AutoImage from '@ckeditor/ckeditor5-image/src/autoimage.js';
+import Alignment from '@ckeditor/ckeditor5-alignment/src/alignment.js';
+import Autolink from '@ckeditor/ckeditor5-link/src/autolink.js';
+import CKFinderUploadAdapter from '@ckeditor/ckeditor5-adapter-ckfinder/src/uploadadapter.js';
+import Code from '@ckeditor/ckeditor5-basic-styles/src/code.js';
+import FontBackgroundColor from '@ckeditor/ckeditor5-font/src/fontbackgroundcolor.js';
+import FontColor from '@ckeditor/ckeditor5-font/src/fontcolor.js';
+import FontFamily from '@ckeditor/ckeditor5-font/src/fontfamily.js';
+import FontSize from '@ckeditor/ckeditor5-font/src/fontsize.js';
+import Highlight from '@ckeditor/ckeditor5-highlight/src/highlight.js';
+import HorizontalLine from '@ckeditor/ckeditor5-horizontal-line/src/horizontalline.js';
+import HtmlEmbed from '@ckeditor/ckeditor5-html-embed/src/htmlembed.js';
+// import ImageInsert from '@ckeditor/ckeditor5-image/src/imageinsert.js';
+// import ImageResize from '@ckeditor/ckeditor5-image/src/imageresize.js';
+import IndentBlock from '@ckeditor/ckeditor5-indent/src/indentblock.js';
+import LinkImage from '@ckeditor/ckeditor5-link/src/linkimage.js';
+import ListStyle from '@ckeditor/ckeditor5-list/src/liststyle.js';
+import PageBreak from '@ckeditor/ckeditor5-page-break/src/pagebreak.js';
+import RemoveFormat from '@ckeditor/ckeditor5-remove-format/src/removeformat.js';
+import Strikethrough from '@ckeditor/ckeditor5-basic-styles/src/strikethrough.js';
+import Underline from '@ckeditor/ckeditor5-basic-styles/src/underline.js';
+import WordCount from '@ckeditor/ckeditor5-word-count/src/wordcount.js';
 
 export default class ClassicEditor extends ClassicEditorBase {}
 
 // Plugins to include in the build.
 ClassicEditor.builtinPlugins = [
+	Alignment,
+	AutoImage,
+	Autolink,
+	CKFinderUploadAdapter,
+	Code,
+	FontBackgroundColor,
+	FontColor,
+	FontFamily,
+	FontSize,
+	Highlight,
+	HorizontalLine,
+	HtmlEmbed,
+	// ImageInsert,
+	// ImageResize,
+	IndentBlock,
+	LinkImage,
+	ListStyle,
+	PageBreak,
+	RemoveFormat,
+	Strikethrough,
+	Underline,
+	WordCount,
 	Essentials,
 	UploadAdapter,
 	Autoformat,
@@ -54,7 +97,6 @@ ClassicEditor.builtinPlugins = [
 	Link,
 	List,
 	MediaEmbed,
-	Paragraph,
 	PasteFromOffice,
 	Table,
 	TableToolbar,
@@ -81,7 +123,12 @@ ClassicEditor.defaultConfig = {
 			'insertTable',
 			'mediaEmbed',
 			'undo',
-			'redo'
+			'redo',
+			'autoLink',
+			'ckFinderUploadAdapter',
+			'code',
+			'fontBackgroundColor',
+			'ckFinder'
 		]
 	},
 	image: {

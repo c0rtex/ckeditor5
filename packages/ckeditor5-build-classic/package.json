@@ -1,6 +1,6 @@
 {
-  "name": "@ckeditor/ckeditor5-build-classic",
-  "version": "26.0.0",
+  "name": "@c0rtex/ckeditor5-ckfinder",
+  "version": "1.0.0",
   "description": "The classic editor build of CKEditor 5 – the best browser-based rich text editor.",
   "keywords": [
     "ckeditor5-build",
@@ -25,7 +25,7 @@
     "build"
   ],
   "dependencies": {
-    "@ckeditor/ckeditor5-adapter-ckfinder": "^26.0.0",
+    "@ckeditor/ckeditor5-alignment": "^26.0.0",
     "@ckeditor/ckeditor5-autoformat": "^26.0.0",
     "@ckeditor/ckeditor5-basic-styles": "^26.0.0",
     "@ckeditor/ckeditor5-block-quote": "^26.0.0",
@@ -34,21 +34,29 @@
     "@ckeditor/ckeditor5-easy-image": "^26.0.0",
     "@ckeditor/ckeditor5-editor-classic": "^26.0.0",
     "@ckeditor/ckeditor5-essentials": "^26.0.0",
+    "@ckeditor/ckeditor5-font": "^26.0.0",
     "@ckeditor/ckeditor5-heading": "^26.0.0",
-    "@ckeditor/ckeditor5-image": "^26.0.0",
-    "@ckeditor/ckeditor5-indent": "^26.0.0",
+    "@ckeditor/ckeditor5-highlight": "^26.0.0",
     "@ckeditor/ckeditor5-link": "^26.0.0",
     "@ckeditor/ckeditor5-list": "^26.0.0",
     "@ckeditor/ckeditor5-media-embed": "^26.0.0",
+    "@ckeditor/ckeditor5-page-break": "^26.0.0",
     "@ckeditor/ckeditor5-paragraph": "^26.0.0",
     "@ckeditor/ckeditor5-paste-from-office": "^26.0.0",
+    "@ckeditor/ckeditor5-remove-format": "^26.0.0",
     "@ckeditor/ckeditor5-table": "^26.0.0",
-    "@ckeditor/ckeditor5-typing": "^26.0.0"
+    "@ckeditor/ckeditor5-typing": "^26.0.0",
+    "@ckeditor/ckeditor5-word-count": "^26.0.0"
   },
   "devDependencies": {
+    "@ckeditor/ckeditor5-adapter-ckfinder": "^26.0.0",
     "@ckeditor/ckeditor5-core": "^26.0.0",
     "@ckeditor/ckeditor5-dev-utils": "^20.0.0",
     "@ckeditor/ckeditor5-dev-webpack-plugin": "^20.0.0",
+    "@ckeditor/ckeditor5-horizontal-line": "^26.0.0",
+    "@ckeditor/ckeditor5-html-embed": "^26.0.0",
+    "@ckeditor/ckeditor5-image": "^26.0.0",
+    "@ckeditor/ckeditor5-indent": "^26.0.0",
     "@ckeditor/ckeditor5-theme-lark": "^26.0.0",
     "postcss-loader": "^3.0.0",
     "raw-loader": "^4.0.1",
@@ -64,10 +72,10 @@
   "author": "CKSource (http://cksource.com/)",
   "license": "GPL-2.0-or-later",
   "homepage": "https://ckeditor.com/ckeditor-5",
-  "bugs": "https://github.com/ckeditor/ckeditor5/issues",
+  "bugs": "https://github.com/c0rtex/ckeditor5/issues",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ckeditor/ckeditor5.git",
+    "url": "https://github.com/c0rtex/ckeditor5.git",
     "directory": "packages/ckeditor5-build-classic"
   },
   "scripts": {
